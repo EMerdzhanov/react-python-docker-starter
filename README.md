@@ -28,28 +28,10 @@ Once you run the setup script (`./scripts/local-setup.sh`), you'll have a fully 
 - [Docker](https://www.docker.com/get-started) (with Docker Compose)
 - [Git](https://git-scm.com/downloads)
 
-## Instructions
-### 1. Download create_direcory.sh to your local machine
-```
-Navigate to the directory that has create_directory.sh. IMPORTANT: the script will create the new project in same folder.
-```
-### 2. Run the script - the scrip will create a folder called "my-web-app"
-```
-bash ./create_directory.sh
-```
-### 3. Navigate to "my-web-app":
-```
-cd my-web-app
-```
-### 4. Then run the local setup script that was created:
-```
-./scripts/local-setup.sh
-```
+## Getting Started
 
-Once everything is running, you can access:
-
-Frontend: http://localhost:3000
-
-Backend API health check: http://localhost:5000/api/health
-
-The frontend should automatically check if it can connect to the backend and display a success message if everything is working properly.
+### Clone the repo  
+```bash
+git clone https://github.com/emerdzhanov/react-python-docker-starter
+.git
+cd react-python-docker-starter
