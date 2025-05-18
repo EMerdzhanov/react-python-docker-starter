@@ -2,7 +2,57 @@
 
 A full-stack application starter template with React frontend, Python Flask backend, and PostgreSQL database, all containerized with Docker.
 
-![Screenshot of the application](screenshots/app-screenshot.png)
+├── my-web-app
+│   ├── frontend
+│   │   ├── public
+│   │   │   ├── index.html
+│   │   │   ├── images/
+│   │   │   ├── css/
+│   │   ├── src
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   ├── App.js
+│   │   │   ├── index.js
+│   │   ├── package.json
+│   │   ├── .env.development
+│   │   ├── .env.production
+│   ├── backend
+│   │   ├── src
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── middleware/
+│   │   │   ├── utils/
+│   │   │   ├── config/
+│   │   │   ├── main.py
+│   │   ├── requirements.txt
+│   │   ├── Pipfile
+│   │   ├── .env.development
+│   │   ├── .env.production
+│   │   ├── tests/
+│   ├── db
+│   │   ├── migrations/
+│   │   ├── seeds/
+│   │   ├── init.sql
+│   ├── docker
+│   │   ├── Dockerfile.frontend
+│   │   ├── Dockerfile.backend
+│   │   ├── docker-compose.yml
+│   ├── infrastructure
+│   │   ├── aws
+│   │   │   ├── cloudformation
+│   │   │   │   ├── template.yaml
+│   │   │   ├── terraform
+│   │   │   │   ├── main.tf
+│   │   │   │   ├── variables.tf
+│   │   ├── nginx
+│   │   │   ├── app.conf
+│   ├── scripts
+│   │   ├── deploy.sh
+│   │   ├── local-setup.sh
+│   │   ├── db_seed.py
+│   ├── .gitignore
+│   ├── README.md
 
 ## Features
 
