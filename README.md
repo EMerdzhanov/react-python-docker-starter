@@ -2,57 +2,17 @@
 
 A full-stack application starter template with React frontend, Python Flask backend, and PostgreSQL database, all containerized with Docker.
 
-├── my-web-app
-│   ├── frontend
-│   │   ├── public
-│   │   │   ├── index.html
-│   │   │   ├── images/
-│   │   │   ├── css/
-│   │   ├── src
-│   │   │   ├── components/
-│   │   │   ├── pages/
-│   │   │   ├── App.js
-│   │   │   ├── index.js
-│   │   ├── package.json
-│   │   ├── .env.development
-│   │   ├── .env.production
-│   ├── backend
-│   │   ├── src
-│   │   │   ├── controllers/
-│   │   │   ├── models/
-│   │   │   ├── routes/
-│   │   │   ├── middleware/
-│   │   │   ├── utils/
-│   │   │   ├── config/
-│   │   │   ├── main.py
-│   │   ├── requirements.txt
-│   │   ├── Pipfile
-│   │   ├── .env.development
-│   │   ├── .env.production
-│   │   ├── tests/
-│   ├── db
-│   │   ├── migrations/
-│   │   ├── seeds/
-│   │   ├── init.sql
-│   ├── docker
-│   │   ├── Dockerfile.frontend
-│   │   ├── Dockerfile.backend
-│   │   ├── docker-compose.yml
-│   ├── infrastructure
-│   │   ├── aws
-│   │   │   ├── cloudformation
-│   │   │   │   ├── template.yaml
-│   │   │   ├── terraform
-│   │   │   │   ├── main.tf
-│   │   │   │   ├── variables.tf
-│   │   ├── nginx
-│   │   │   ├── app.conf
-│   ├── scripts
-│   │   ├── deploy.sh
-│   │   ├── local-setup.sh
-│   │   ├── db_seed.py
-│   ├── .gitignore
-│   ├── README.md
+This script:
+
+1. Creates all the necessary directories and files
+2. Sets up a React frontend with connection status checking
+3. Configures a Python Flask backend with a health endpoint
+4. Creates Docker configuration for both services
+5. Adds scripts for local setup and deployment
+6. Includes VS Code settings for development
+7. Adds a README with instructions
+
+Once you run the setup script (`./scripts/local-setup.sh`), you'll have a fully working frontend and backend. The React app will automatically check the connection to the backend and display a success or error message accordingly.
 
 ## Features
 
@@ -67,3 +27,21 @@ A full-stack application starter template with React frontend, Python Flask back
 
 - [Docker](https://www.docker.com/get-started) (with Docker Compose)
 - [Git](https://git-scm.com/downloads)
+
+## Instructions
+### 1. Download create_direcory.sh to your local machine
+```
+Navigate to the directory that has create_directory.sh. IMPORTANT: the script will create the new project in same folder.
+```
+### 2. Run the script - the scrip will create a folder called "my-web-app"
+```
+bash ./create_directory.sh
+```
+### 3. Navigate to "my-web-app":
+```
+cd my-web-app
+```
+### 4. Then run the local setup script that was created:
+```
+./scripts/local-setup.sh
+```
