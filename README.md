@@ -45,3 +45,10 @@ cd my-web-app
 ```
 ./scripts/local-setup.sh
 ```
+
+Once everything is running, you can access:
+
+Frontend: http://localhost:3000
+Backend API health check: http://localhost:5000/api/health
+
+The frontend should automatically check if it can connect to the backend and display a success message if everything is working properly.
