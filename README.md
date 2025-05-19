@@ -41,13 +41,13 @@ cd my-web-app
 ```
 Done:
 
- ✔ backend                      Built                                                          0.0s 
- ✔ frontend                     Built                                                          0.0s 
- ✔ Network docker_default       Created                                                        0.1s 
- ✔ Container docker-backend-1   Started                                                       27.0s 
- ✔ Container docker-frontend-1  Started                                                       27.0s 
-🚀 Services are starting...
-⏳ Waiting for services to be ready...
-✅ Frontend is running at: http://localhost:3000
-✅ Backend is running at: http://localhost:5000/api/health
-✅ All services are up and running!
+ - ✔ backend                      Built                                                          0.0s 
+ - ✔ frontend                     Built                                                          0.0s 
+ - ✔ Network docker_default       Created                                                        0.1s 
+ - ✔ Container docker-backend-1   Started                                                       27.0s 
+ - ✔ Container docker-frontend-1  Started                                                       27.0s 
+- 🚀 Services are starting...
+- ⏳ Waiting for services to be ready...
+- ✅ Frontend is running at: http://localhost:3000
+- ✅ Backend is running at: http://localhost:5000/api/health
+- ✅ All services are up and running!
